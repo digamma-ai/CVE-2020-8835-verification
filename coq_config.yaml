@@ -1,0 +1,17 @@
+# This is a config file for `coq-config`.
+# https://github.com/vzaliva/coq-config
+
+opam:
+  switch: ebpf_bug
+  compiler: 4.12.0
+
+repositories:
+  - name: coq-released
+    address: https://coq.inria.fr/opam/released
+
+dependencies:
+  - coq-vst
+  - name: coq-struct-tact
+    kind: git
+    target: https://github.com/uwplse/StructTact.git
+
